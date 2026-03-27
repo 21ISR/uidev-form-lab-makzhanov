@@ -22,22 +22,20 @@
         </header>
         <form action="/api/register" method="post" class="start">
             <article>
-                <h3>Email or Student ID</h3>
-                <input type="text" placeholder="Enter your email or student id" class="email">
+                <label for="email">Email or Student ID</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email or student id" class="email">
             </article>
             <article>
-                <h3>Password</h3>
-                <input type="text" placeholder="Enter your password" class="email">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" class="email">
             </article>
-            <article class="remember">
-                <label>
-                    <input type="checkbox" name="agree" value="yes">
-                    remember me
-                    <a href="" class="forgot">Forgot password?</a>
-                    <button class="log">Log in</button>
-                </label>
+            <article class="check">
+                <input type="checkbox" class="box" name="remember" value="yes">
+                <label for="checkbox">Remember me</label>
+                <a href="" class="forgot">Forgot password?</a>
+                <button class="log">Log in</button>
             </article>
-        </section>
+        </form>
         <section class="finish">
             <article class="or">
                 <span class="line-or"></span>
@@ -65,7 +63,7 @@
                     </svg></button>
             </article>
             <p>Dont have account? <a href="registr.html">Registred</a></p>
-            
+
 
         </section>
 
