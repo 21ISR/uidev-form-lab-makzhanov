@@ -27,7 +27,7 @@ header {
 
 article {
     padding: 15px;
-    gap
+    gap:10px;
 }
 
 .email {
