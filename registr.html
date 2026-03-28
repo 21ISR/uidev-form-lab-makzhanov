@@ -18,7 +18,7 @@
     <div>
         <header>
             <h1>Student Registration</h1>
-            <p>Create your student account</p>
+            <p >Create your student account</p>
         </header>
         <form action="/api/register" method="post">
             <article>
@@ -35,7 +35,7 @@
             </article>
             <article>
                 <label for="program">Select Program</label>
-                <select id="program" name="program">
+                <select id="program" name="program" class="email">
                     <option value="">Choose your Program</option>
                     <option value="Computer Science">Computer Science</option>
                     <option value="Engineering">Engineering</option>
@@ -52,12 +52,18 @@
                 <label for="password-confirm">Password</label>
                 <input type="password" name="password" id="password-confirm" placeholder="Confirm your password"
                     class="email">
-                <article class="check">
-                    <input type="checkbox" class="box" name="remember" value="yes">
-                    <label for="checkbox">I agree to thr Terms of Service and Privacy Policy</label>
-                    <button class="log"> Create Account </button>
+            </article>
         </form>
+        <article class="check">
+            <label for="checkbox"><input type="checkbox" class="box" name="remember" value="yes"> I agree to the
+                Terms of Service and Privacy Policy</label>
+        </article>
+
         <article>
+            <button class="log"> Create Account </button>
+        </article>
+
+        <article class="SS">
             <p>Already have an account? <a href="index.html">Log in</a></p>
         </article>
 
